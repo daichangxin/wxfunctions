@@ -8,7 +8,6 @@
 
 ### msg_check 
 微信内容检查接口调用，拉取access_token并检查
-TODO access_token单独拎出来云函数方便其他地方使用
 
 ### rank_get 
 排行拉取，拉取指定索引开始的指定数量排行数据，如果传入userId，则顺带userId的数据
@@ -21,3 +20,8 @@ TODO access_token单独拎出来云函数方便其他地方使用
 
 ### update_user 
 更新用户信息，统计用户数据到user数据库
+
+### get_access_token
+拉取微信access_token并储存到数据库consts下，使用参考msg_check
+
+## TODO

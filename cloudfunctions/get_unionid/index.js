@@ -28,7 +28,7 @@ exports.main = async (event, context) => {
             unionId: UNIONID
         };
     }
-    let secret = '填入你的小程序开发密钥';
+    let secret = 'YourSecret';
     let url = 'https://api.weixin.qq.com/sns/jscode2session?appid=' + APPID + '&secret=' + secret + '&js_code=' + event.code + '&grant_type=authorization_code';
     return new Promise((resolve, reject) => {
         new Promise((resolve, reject) => {
